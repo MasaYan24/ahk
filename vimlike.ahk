@@ -53,6 +53,7 @@ vk1D & c::Send, ^c
 vk1D & v::Send, ^v
 vk1D & z::Send, ^z
 vk1D & l::Send, ^l
+vk1D & r::Send, ^r
 vk1C & n::Send, ^n
 vk1D & n::Send, ^n
 

@@ -69,6 +69,11 @@ Tab & vk1D::
 vk1D & Space::Send, {LWin}
 vk1C & Space::Send, {RWin}
 
+vk1D & Left::Send, #{Left}
+vk1D & Down::Send, #{Down}
+vk1D & Up::Send, #{Up}
+vk1D & Right::Send, #{Right}
+
 vk1D & 4::
   if GetKeyState("Shift"){
     Send, +#s
@@ -78,6 +83,9 @@ vk1D & 4::
 
 vk1D::Send, {vk1D}
 
+vk1D & LButton::Send, ^{LButton}
+
+Esc::Send, {Esc}{vk1D}
 
 ; vi like key for apple us keyboard
 ;>#h::Send {Left}
@@ -98,7 +106,3 @@ vk1D::Send, {vk1D}
 ;<#l::Send, ^l
 ;>#n::Send, ^n
 ;<#n::Send, ^n
-
-#Space::Send, a
-
-<#Tab::AltTab
